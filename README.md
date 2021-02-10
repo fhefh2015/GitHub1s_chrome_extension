@@ -2,6 +2,7 @@
 Easier and faster to use Github1s
 
 One second to read GitHub code with VS Code. 
+
 https://github.com/conwnet/github1s 
 
 # Tampermonkey
