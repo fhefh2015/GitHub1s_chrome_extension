@@ -5,11 +5,14 @@ One second to read GitHub code with VS Code.
 
 https://github.com/conwnet/github1s 
 
+# chrome extension
+https://chrome.google.com/webstore/detail/github1s/lodjfmkfbfkpdhnhkcdcoonghhghbkhe
+
+![bQrnNlT](https://i.imgur.com/bQrnNlT.gif)
+
 # Tampermonkey
 https://greasyfork.org/zh-CN/scripts/421412-%E4%B8%80%E9%94%AE%E5%BC%80%E5%90%AFgithub1s%E9%A1%B5%E9%9D%A2
 
-# chrome extension
-coming to soon
 
 # Preview
 ![iNomSiR](https://i.imgur.com/iNomSiR.png)
