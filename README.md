@@ -1,7 +1,7 @@
 # GitHub1s_chrome_extension
 Easier and faster to use Github1s
 
-conwnet/github1s: One second to read GitHub code with VS Code. 
+One second to read GitHub code with VS Code. 
 https://github.com/conwnet/github1s 
 
 # Tampermonkey
