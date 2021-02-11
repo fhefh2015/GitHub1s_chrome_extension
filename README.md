@@ -28,6 +28,8 @@ https://stackoverflow.com/questions/40660407/why-does-my-chrome-extension-ask-fo
 
 I'm so sorry for that, i have changed the permission to activeTab.
 
+----------
+
 
 # chrome extension
 https://chrome.google.com/webstore/detail/github1s/lodjfmkfbfkpdhnhkcdcoonghhghbkhe
