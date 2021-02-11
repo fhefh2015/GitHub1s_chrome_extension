@@ -45,7 +45,7 @@ javascript: window.location.href = window.location.href.replace('github.com', 'g
 
 
 # Preview
-![mpToO7a](https://i.imgur.com/mpToO7a.png)
-![IChMZl6](https://i.imgur.com/IChMZl6.png)
+![kX1istY](https://i.imgur.com/kX1istY.png)
+![NXNTz7P](https://i.imgur.com/NXNTz7P.png)
 ![iNomSiR](https://i.imgur.com/iNomSiR.png)
 ![BU6atl0](https://i.imgur.com/BU6atl0.png)
