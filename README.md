@@ -13,8 +13,13 @@ https://chrome.google.com/webstore/detail/github1s/lodjfmkfbfkpdhnhkcdcoonghhghb
 # Tampermonkey
 https://greasyfork.org/zh-CN/scripts/421412-%E4%B8%80%E9%94%AE%E5%BC%80%E5%90%AFgithub1s%E9%A1%B5%E9%9D%A2
 
+# Bookmarklet 
+```javascript
+javascript: window.location.href = window.location.href.replace('github.com', 'github1s.com')
+```
+
 
 # Preview
+![mpToO7a](https://i.imgur.com/mpToO7a.png)
 ![iNomSiR](https://i.imgur.com/iNomSiR.png)
-![BU6atl0](https://i.imgur.com/BU6atl0.png)
-![T7laLON](https://i.imgur.com/T7laLON.png)
+![BU6atl0](https://i.imgur.com/BU6atl0.png
