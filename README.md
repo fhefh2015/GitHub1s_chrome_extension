@@ -10,6 +10,24 @@ https://github.com/conwnet/github1s
 
 ----------
 
+# History
+
+v0.2.1
+add  'Open with new tab' option
+
+v0.2.2
+Add customization options
+add 'Open with Right-click menu' option
+
+v0.2.3
+add 'Open with Right-click menu' option
+
+v0.2.4
+add 'Allow use of GitHub1s in private repositories' option
+
+v0.2.5
+add 'Switching to use Gitpod' option
+
 
 # Noted
 
