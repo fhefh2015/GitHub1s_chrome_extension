@@ -10,6 +10,8 @@ https://github.com/conwnet/github1s
 
 ----------
 
+[![Page Views Count](https://badges.toozhao.com/badges/01EYB0JV8TJM3A7E0TK240SB29/green.svg)](https://badges.toozhao.com/stats/01EYB0JV8TJM3A7E0TK240SB29 "Get your own page views count badge on badges.toozhao.com")
+
 # History
 
 v0.2.1
