@@ -14,11 +14,12 @@ https://github.com/conwnet/github1s
 
 v0.2.1
 
-add  'Open with new tab' option
+add customization options
+
 
 v0.2.2
 
-Add customization options
+add  'Open with new tab' option
 
 v0.2.3
 
