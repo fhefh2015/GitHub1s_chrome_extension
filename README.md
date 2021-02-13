@@ -1,4 +1,5 @@
-# GitHub1s_chrome_extension
+# GitHub1s_chrome_extension 
+[![Page Views Count](https://badges.toozhao.com/badges/01EYB0JV8TJM3A7E0TK240SB29/green.svg)](https://badges.toozhao.com/stats/01EYB0JV8TJM3A7E0TK240SB29 "Get your own page views count badge on badges.toozhao.com")
 
 Easier and faster to use Github1s
 
@@ -10,7 +11,8 @@ https://github.com/conwnet/github1s
 
 ----------
 
-[![Page Views Count](https://badges.toozhao.com/badges/01EYB0JV8TJM3A7E0TK240SB29/green.svg)](https://badges.toozhao.com/stats/01EYB0JV8TJM3A7E0TK240SB29 "Get your own page views count badge on badges.toozhao.com")
+# chrome extension
+https://chrome.google.com/webstore/detail/github1s/lodjfmkfbfkpdhnhkcdcoonghhghbkhe
 
 # History
 
@@ -55,13 +57,6 @@ I'm so sorry for that, i have changed the permission to activeTab.
 
 ----------
 
-
-# chrome extension
-https://chrome.google.com/webstore/detail/github1s/lodjfmkfbfkpdhnhkcdcoonghhghbkhe
-
-![bQrnNlT](https://raw.githubusercontent.com/fhefh2015/GitHub1s_chrome_extension/main/2021-02-11%2012.11.26.gif)
-
-
 # Tampermonkey
 https://greasyfork.org/zh-CN/scripts/421412-%E4%B8%80%E9%94%AE%E5%BC%80%E5%90%AFgithub1s%E9%A1%B5%E9%9D%A2
 
@@ -72,7 +67,7 @@ javascript: window.location.href = window.location.href.replace('github.com', 'g
 
 
 # Preview
-![kX1istY](https://i.imgur.com/kX1istY.png)
+![nLqP6Fx](https://i.imgur.com/nLqP6Fx.png)
 ![NXNTz7P](https://i.imgur.com/NXNTz7P.png)
 ![iNomSiR](https://i.imgur.com/iNomSiR.png)
 ![BU6atl0](https://i.imgur.com/BU6atl0.png)
