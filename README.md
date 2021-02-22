@@ -38,7 +38,9 @@ v0.2.5
 add 'Switching to use Gitpod' option
 
 v0.3.0
+
 Configuration page UI modification
+
 Add the option to use keyboard shortcut keys
 
 
