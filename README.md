@@ -37,6 +37,10 @@ v0.2.5
 
 add 'Switching to use Gitpod' option
 
+v0.3.0
+Configuration page UI modification
+Add the option to use keyboard shortcut keys
+
 
 # Noted
 
@@ -67,7 +71,7 @@ javascript: window.location.href = window.location.href.replace('github.com', 'g
 
 
 # Preview
-![nLqP6Fx](https://i.imgur.com/nLqP6Fx.png)
+![nLqP6Fx](https://user-images.githubusercontent.com/14891797/108682902-de62ea00-752b-11eb-8572-4b66268f422d.png)
 ![NXNTz7P](https://i.imgur.com/NXNTz7P.png)
 ![iNomSiR](https://i.imgur.com/iNomSiR.png)
 ![BU6atl0](https://i.imgur.com/BU6atl0.png)
