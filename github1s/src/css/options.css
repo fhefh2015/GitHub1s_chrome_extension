@@ -1,0 +1,52 @@
+body {
+	background-color: #f0f2f5 !important;
+}
+
+.container {
+	padding-bottom: 60px;
+}
+
+.logo {
+	width: 72px;
+	height: 72px;
+	background: url(../icons/icon160.png) no-repeat center center;
+	background-size: 100% 100%;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+.text {
+	padding: 10px 0;
+	font-size: 32px;
+	color: #000;
+	text-align: center;
+}
+
+.mt20 {
+	margin-top: 20px;
+}
+
+.mb10 {
+	margin-bottom: 10px;
+}
+
+.prview_btn {
+	position: relative;
+	display: inline-block;
+	padding: 5px 16px;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 20px;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 1px solid transparent;
+	border-radius: 6px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
