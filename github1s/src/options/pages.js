@@ -1,15 +1,13 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react'
 import { Layout, Row, Col, Form, Input, Button, Checkbox, Select, Tooltip, Modal } from 'antd';
-import { validateMessages, checkBoxItems, selectBoxItems, defaultSetting } from './common';
-import { r2c, c2r, setItemByKey, getItem, formReset } from './utils';
-import '../css/options.css';
+import { checkBoxItems, selectBoxItems, defaultSetting } from '../js/common';
+import { r2c, c2r, setItemByKey, getItem, formReset } from '../js/utils';
+import './options.css';
 
 const { Content } = Layout;
 const { Option } = Select;
 
-class Page extends React.PureComponent {
-
-  formRef = React.createRef()
+class Pages extends React.PureComponent {
 
   state = {
     "formData": {
@@ -199,4 +197,4 @@ class Page extends React.PureComponent {
   }
 }
 
-export default Form.create({ name: 'form' })(Page);;
+export default Form.create({ name: 'form' })(Pages);;

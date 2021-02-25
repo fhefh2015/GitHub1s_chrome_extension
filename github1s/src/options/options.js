@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Page from './page';
+import Pages from './pages';
+
 
 ReactDOM.render(
-  <Page />,
+  <Pages />,
   document.getElementById('options')
 );

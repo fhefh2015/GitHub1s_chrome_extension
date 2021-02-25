@@ -1,7 +1,18 @@
 import hotkeys from 'hotkeys-js';
-import { fixOldVersion, getItem, getHref } from './utils';
+import { fixOldVersion, getItem, getHref } from '../js/utils';
+
 
 init();
+
+
+chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
+  if (msg === 'url-update') {
+    const github1s = document.querySelector("#github1s_kkk");
+    if (!github1s) {
+      init();
+    }
+  }
+});
 
 async function init() {
   let setting = await fixOldVersion();
@@ -39,7 +50,7 @@ async function init() {
   const target = (check_box["new_tab"] == 1) ? "_blank" : "_self";
 
   const btn = `
-  <a class="btn ml-2 d-none d-md-block" style="background: ${button_background_color}; color: ${button_title_color};" target="${target}" href="${href}">${button_title}</a>
+  <a class="btn ml-2 d-none d-md-block" style="background: ${button_background_color}; color: ${button_title_color};" target="${target}" href="${href}" id="github1s_kkk">${button_title}</a>
   `;
   const insertNode = document.querySelector('.btn.ml-2.d-none.d-md-block');
 

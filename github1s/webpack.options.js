@@ -7,15 +7,15 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const isDev = "development" == process.env.NODE_ENV ? true : false;
 
 module.exports = merge(common, {
   plugins: [
-    new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: 'css/[name].[contenthash:7].css',
     }),
     new HtmlWebpackPlugin({
-      template: './src/options.html',
+      template: './src/options/options.html',
       filename: 'options.html',
       favicon: './src/icons/icon160.png',
       inject: 'body',
@@ -31,7 +31,16 @@ module.exports = merge(common, {
         { from: resolve(__dirname, 'src/manifest.json'), to: resolve(__dirname, 'build') },
       ],
     }),
+    new CleanWebpackPlugin(),
   ],
-  mode: 'development',
-  devtool: "source-map",
+  mode: isDev ? 'development' : 'production',
+  target: 'web',
+  devtool: isDev ? "eval-source-map" : "source-map",
+  devServer: {
+    contentBase: resolve(__dirname, 'dist'),
+    compress: true,
+    open: false,
+    hot: true,
+    port: 9999,
+  }
 });

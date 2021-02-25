@@ -10,7 +10,6 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = merge(common, {
   plugins: [
-    new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: 'css/[name].[contenthash:7].css',
     }),
@@ -26,7 +25,7 @@ module.exports = merge(common, {
       }
     }),
     new HtmlWebpackPlugin({
-      template: './src/options.html',
+      template: './src/options/options.html',
       filename: 'options.html',
       favicon: './src/icons/icon160.png',
       inject: 'body',
@@ -42,6 +41,7 @@ module.exports = merge(common, {
         { from: resolve(__dirname, 'src/manifest.json'), to: resolve(__dirname, 'build') },
       ],
     }),
+    new CleanWebpackPlugin(),
   ],
   mode: 'production',
   // devtool: "source-map",

@@ -1,4 +1,4 @@
-import { getQueryTab, getItem, getHref, setItemByKey } from './utils';
+import { getQueryTab, getItem, getHref, setItemByKey } from '../js/utils';
 
 // chrome.browserAction.onClicked.addListener(async () => {
 
@@ -40,6 +40,16 @@ chrome.extension.onRequest.addListener((request) => {
     createTab(href);
   }
 });
+
+chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
+  const { status } = changeInfo;
+
+  if (status == "complete") {
+    chrome.tabs.sendMessage(tabId, "url-update");
+  }
+
+});
+
 
 async function createTab(href) {
 
