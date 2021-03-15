@@ -5,14 +5,14 @@ import { fixOldVersion, getItem, getHref } from '../js/utils';
 init();
 
 
-chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
-  if (msg === 'url-update') {
-    const github1s = document.querySelector("#github1s_kkk");
-    if (!github1s) {
-      init();
-    }
-  }
-});
+// chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
+//   if (msg === 'url-update') {
+//     const github1s = document.querySelector("#github1s_kkk");
+//     if (!github1s) {
+//       init();
+//     }
+//   }
+// });
 
 async function init() {
   let setting = await fixOldVersion();
