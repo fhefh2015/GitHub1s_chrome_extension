@@ -14,6 +14,36 @@ init();
 //   }
 // });
 
+function insertGitHub1sButton(setting) {
+  const {
+    input_url,
+    button_title,
+    button_title_color,
+    button_background_color,
+    check_box,
+  } = setting;
+
+  const localURL = window.location.href;
+  const href = getHref(setting, localURL, input_url);
+
+  const target = (check_box["new_tab"] == 1) ? "_blank" : "_self";
+
+  const btn = `
+  <a class="btn ml-2 d-none d-md-block" style="background: ${button_background_color}; color: ${button_title_color};" target="${target}" href="${href}" id="github1s_kkk">${button_title}</a>
+  `;
+  const insertNode = document.querySelector('.btn.ml-2.d-none.d-md-block');
+
+  if (insertNode) {
+    insertNode.insertAdjacentHTML('beforeBegin', btn);
+  }
+}
+
+function ensureGitHub1sButtonExists(setting) {
+  if (!document.getElementById('github1s_kkk')) {
+    insertGitHub1sButton(setting);
+  }
+}
+
 async function init() {
   let setting = await fixOldVersion();
   const localURL = window.location.href;
@@ -21,10 +51,7 @@ async function init() {
   const {
     input_url,
     button_title,
-    button_title_color,
-    button_background_color,
     check_box,
-    web_service,
     keyboard_shortcuts
   } = setting;
 
@@ -47,16 +74,8 @@ async function init() {
     }
   }
 
-  const target = (check_box["new_tab"] == 1) ? "_blank" : "_self";
-
-  const btn = `
-  <a class="btn ml-2 d-none d-md-block" style="background: ${button_background_color}; color: ${button_title_color};" target="${target}" href="${href}" id="github1s_kkk">${button_title}</a>
-  `;
-  const insertNode = document.querySelector('.btn.ml-2.d-none.d-md-block');
-
-  if (insertNode) {
-    insertNode.insertAdjacentHTML('beforeBegin', btn);
-  }
+  const mutationObserver = new MutationObserver(() => ensureGitHub1sButtonExists(setting));
+  mutationObserver.observe(document.body, { childList: true, subtree: true });
 
   if (check_box["use_keyboard"]) {
     console.log("use_keyboard");
