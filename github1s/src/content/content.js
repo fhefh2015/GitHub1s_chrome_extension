@@ -1,18 +1,8 @@
 import hotkeys from 'hotkeys-js';
-import { fixOldVersion, getItem, getHref } from '../js/utils';
+import { fixOldVersion, getHref, getItem } from '../js/utils';
 
 
 init();
-
-
-// chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
-//   if (msg === 'url-update') {
-//     const github1s = document.querySelector("#github1s_kkk");
-//     if (!github1s) {
-//       init();
-//     }
-//   }
-// });
 
 function insertGitHub1sButton(setting) {
   const {
@@ -31,10 +21,10 @@ function insertGitHub1sButton(setting) {
   const btn = `
   <a class="btn ml-2 d-none d-md-block" style="background: ${button_background_color}; color: ${button_title_color};" target="${target}" href="${href}" id="github1s_kkk">${button_title}</a>
   `;
-  const insertNode = document.querySelector('.btn.ml-2.d-none.d-md-block');
+  const insertNode = document.querySelector('.details-overlay.d-block');
 
   if (insertNode) {
-    insertNode.insertAdjacentHTML('beforeBegin', btn);
+    insertNode.insertAdjacentHTML('afterend', btn);
   }
 }
 
@@ -57,16 +47,12 @@ async function init() {
 
   const href = getHref(setting, localURL, input_url);
 
-  console.log("setting: ", setting);
-
   const privateElems = document.querySelectorAll('#js-repo-pjax-container .Label');
   let judge_is_private = false;
 
   judge_is_private = Array.from(privateElems).some(item => {
     return (item.textContent.trim().toLowerCase() == "private");
   });
-
-  console.log("judge_is_private:", judge_is_private, " is_private:", check_box["is_private"]);
 
   if (judge_is_private) {
     if (check_box["is_private"] == 0) {
@@ -78,10 +64,8 @@ async function init() {
   mutationObserver.observe(document.body, { childList: true, subtree: true });
 
   if (check_box["use_keyboard"]) {
-    console.log("use_keyboard");
     const key = keyboard_shortcuts.replace(/\s/ig, "").toLowerCase();
     hotkeys(key, function (event, handler) {
-      console.log("hotkey: ", handler);
       // Prevent the default refresh event under WINDOWS system
       event.preventDefault();
       chrome.extension.sendRequest({
@@ -93,7 +77,6 @@ async function init() {
   }
 
   if (check_box["right_menu"]) {
-    console.log("right_menu");
     const right_menu_create = await getItem("right_menu_create");
 
     if (right_menu_create == 1) {
