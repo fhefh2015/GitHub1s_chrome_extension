@@ -16,6 +16,10 @@ https://github.com/conwnet/github1s
 
 https://chrome.google.com/webstore/detail/github1s/lodjfmkfbfkpdhnhkcdcoonghhghbkhe
 
+# safari extension
+
+https://github.com/code4you2021/GitHub1s-For-Safari-Extension
+
 # History
 
 v0.2.1
