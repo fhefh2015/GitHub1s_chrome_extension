@@ -20,6 +20,45 @@ https://chrome.google.com/webstore/detail/github1s/lodjfmkfbfkpdhnhkcdcoonghhghb
 
 https://github.com/code4you2021/GitHub1s-For-Safari-Extension
 
+# Noted
+
+```
+Why does my chrome extension ask for history permissions?
+
+This is the standard warning for the "tabs" permission.
+It allows you to query, and be notified of changes, to URLs of all tabs. This allows you to spy on the user's history in real time - even if you don't have access to the browser's own history log.
+
+Note that "tabs" permission is not required in most cases. Providing access to URLs is basically the only reason to include it. You can use most of the tabs API without it, and can get access to current tab without warning using the "activeTab" permission.
+```
+
+manifest - Why does my chrome extension ask for history permissions? - Stack Overflow
+
+https://stackoverflow.com/questions/40660407/why-does-my-chrome-extension-ask-for-history-permissions
+
+I'm so sorry for that, i have changed the permission to activeTab.
+
+---
+
+# Tampermonkey
+
+https://greasyfork.org/zh-CN/scripts/421412-%E4%B8%80%E9%94%AE%E5%BC%80%E5%90%AFgithub1s%E9%A1%B5%E9%9D%A2
+
+# Bookmarklet
+
+```javascript
+javascript: window.location.href = window.location.href.replace(
+	"github.com",
+	"github1s.com"
+);
+```
+
+# Preview
+
+![nLqP6Fx](https://user-images.githubusercontent.com/14891797/108682902-de62ea00-752b-11eb-8572-4b66268f422d.png)
+![NXNTz7P](https://i.imgur.com/NXNTz7P.png)
+![iNomSiR](https://i.imgur.com/iNomSiR.png)
+![BU6atl0](https://i.imgur.com/BU6atl0.png)
+
 # History
 
 v0.2.1
@@ -66,41 +105,3 @@ v0.3.5
 
 Fix the button not appearing problem
 
-# Noted
-
-```
-Why does my chrome extension ask for history permissions?
-
-This is the standard warning for the "tabs" permission.
-It allows you to query, and be notified of changes, to URLs of all tabs. This allows you to spy on the user's history in real time - even if you don't have access to the browser's own history log.
-
-Note that "tabs" permission is not required in most cases. Providing access to URLs is basically the only reason to include it. You can use most of the tabs API without it, and can get access to current tab without warning using the "activeTab" permission.
-```
-
-manifest - Why does my chrome extension ask for history permissions? - Stack Overflow
-
-https://stackoverflow.com/questions/40660407/why-does-my-chrome-extension-ask-for-history-permissions
-
-I'm so sorry for that, i have changed the permission to activeTab.
-
----
-
-# Tampermonkey
-
-https://greasyfork.org/zh-CN/scripts/421412-%E4%B8%80%E9%94%AE%E5%BC%80%E5%90%AFgithub1s%E9%A1%B5%E9%9D%A2
-
-# Bookmarklet
-
-```javascript
-javascript: window.location.href = window.location.href.replace(
-	"github.com",
-	"github1s.com"
-);
-```
-
-# Preview
-
-![nLqP6Fx](https://user-images.githubusercontent.com/14891797/108682902-de62ea00-752b-11eb-8572-4b66268f422d.png)
-![NXNTz7P](https://i.imgur.com/NXNTz7P.png)
-![iNomSiR](https://i.imgur.com/iNomSiR.png)
-![BU6atl0](https://i.imgur.com/BU6atl0.png)
