@@ -1,5 +1,7 @@
 # GitHub1s_chrome_extension
 
+# Introduction
+
 [![Page Views Count](https://badges.toozhao.com/badges/01EYB0JV8TJM3A7E0TK240SB29/green.svg)](https://badges.toozhao.com/stats/01EYB0JV8TJM3A7E0TK240SB29 "Get your own page views count badge on badges.toozhao.com")
 
 Easier and faster to use Github1s
@@ -19,6 +21,14 @@ https://chrome.google.com/webstore/detail/github1s/lodjfmkfbfkpdhnhkcdcoonghhghb
 # safari extension
 
 https://github.com/code4you2021/GitHub1s-For-Safari-Extension
+
+# Buy Me A Coffee
+
+Love the project? Wanna buy me a coffee? (or a beer :D)
+
+[![alt text](./images/buymeacoffee.svg)](https://www.buymeacoffee.com/fhefh2015)
+
+---
 
 # Noted
 
@@ -105,3 +115,8 @@ v0.3.5
 
 Fix the button not appearing problem
 
+v0.3.6
+
+Add stackblitz.com support
+
+Use GitHub1s without logging into Github
