@@ -21,10 +21,13 @@ function insertGitHub1sButton(setting) {
   const btn = `
   <a class="btn ml-2 d-none d-md-block" style="background: ${button_background_color}; color: ${button_title_color};" target="${target}" href="${href}" id="github1s_kkk">${button_title}</a>
   `;
-  const insertNode = document.querySelector('.details-overlay.d-block');
+  // const insertNode = document.querySelector('.details-overlay.d-block');
+  const insertNode = document.querySelector(".d-none.d-md-flex.ml-2");
 
   if (insertNode) {
-    insertNode.insertAdjacentHTML('afterend', btn);
+    // insertNode.insertAdjacentHTML('afterend', btn);
+    insertNode.insertAdjacentHTML('beforebegin', btn);
+
   }
 }
 

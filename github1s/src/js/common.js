@@ -50,6 +50,11 @@ export const selectBoxItems = [
     name: "Vscode",
     url: "vscode://vscode.git/clone?url=https://github.com/",
     index: 4,
+  },
+  {
+    name: "Stackblitz",
+    url: "http://githubblitz.com/",
+    index: 5,
   }
 ];
 
