@@ -102,7 +102,7 @@ export function getQueryTab() {
 export function getHref(data, siteURL, inputURL) {
 
   const url = new URL(siteURL);
-  const path = url.pathname.split('/').slice(1, 3).join('/');
+  const path = url.pathname.split('/').slice(1).join('/');
   // const [userName, repository] = url.pathname.split('/').slice(1, 3);
 
   let href;
