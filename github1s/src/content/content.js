@@ -18,16 +18,17 @@ function insertGitHub1sButton(setting) {
 
   const target = (check_box["new_tab"] == 1) ? "_blank" : "_self";
 
-  const btn = `
-  <a class="btn ml-2 d-none d-md-block" style="background: ${button_background_color}; color: ${button_title_color};" target="${target}" href="${href}" id="github1s_kkk">${button_title}</a>
-  `;
   // const insertNode = document.querySelector('.details-overlay.d-block');
-  const insertNode = document.querySelector(".d-none.d-md-flex.ml-2");
+  const insertNode = document.querySelector(".btn.d-none.d-md-block");
 
   if (insertNode) {
+    const layoutClass = insertNode.classList.contains('ml-2') ? 'ml-2' : 'mr-2';
+    const btn = `
+    <a class="btn ${layoutClass} d-none d-md-block" style="background: ${button_background_color}; color: ${button_title_color};" target="${target}" href="${href}" id="github1s_kkk">${button_title}</a>
+    `;
+
     // insertNode.insertAdjacentHTML('afterend', btn);
     insertNode.insertAdjacentHTML('beforebegin', btn);
-
   }
 }
 
