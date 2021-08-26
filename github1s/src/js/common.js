@@ -53,8 +53,14 @@ export const selectBoxItems = [
   },
   {
     name: "Stackblitz",
-    url: "http://githubblitz.com/",
+    // url: "https://githubblitz.com/",
+    url: "https://stackblitz.com/github/",
     index: 5,
+  },
+  {
+    name: "GitHub.Dev",
+    url: "https://github.dev/",
+    index: 6,
   }
 ];
 

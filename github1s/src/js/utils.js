@@ -119,6 +119,7 @@ export function getHref(data, siteURL, inputURL) {
     case 3:
     case 4:
     case 5:
+    case 6:
       href = `${selectBoxItems[web_service]["url"]}${path}`;
       break;
   }
